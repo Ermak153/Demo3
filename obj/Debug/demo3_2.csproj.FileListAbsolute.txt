@@ -1,0 +1,11 @@
+C:\Users\ermak\source\repos\demo3_2\bin\Debug\demo3_2.exe.config
+C:\Users\ermak\source\repos\demo3_2\bin\Debug\demo3_2.exe
+C:\Users\ermak\source\repos\demo3_2\bin\Debug\demo3_2.pdb
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.csproj.AssemblyReference.cache
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.AuthForm.resources
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.Properties.Resources.resources
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.csproj.GenerateResource.cache
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.csproj.CoreCompileInputs.cache
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.exe
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.pdb
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.ProductsForm.resources
