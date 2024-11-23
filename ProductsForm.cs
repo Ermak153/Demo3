@@ -9,13 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace demo3_2
 {
     public partial class ProductsForm : Form
     {
-                          
         SqlCommand sCommand;
         SqlDataAdapter sAdapter;
         SqlCommandBuilder sBuilder;
@@ -96,9 +94,9 @@ namespace demo3_2
                         connection.Open();
                         string ID = dataGridView.SelectedRows[0].Cells["ID"].Value.ToString();
                         string query = $"DELETE FROM {tableName} WHERE ID = {ID}";
-                        dataGridView.Rows.RemoveAt(dataGridView.CurrentRow.Index);
                         SqlCommand command = new SqlCommand(query, connection);
                         command.ExecuteNonQuery();
+                        dataGridView.Rows.RemoveAt(dataGridView.CurrentRow.Index);
                         connection.Close();
                         LoadData(tableName);
                     }
