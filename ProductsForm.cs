@@ -26,8 +26,9 @@ namespace demo3_2
         public ProductsForm()
         {
             InitializeComponent();
-            LoadData(tableName);
             LoadTableNames();
+            tablesCmbox.SelectedItem = "Категория";
+            LoadData(tableName);
         }
 
         private void ProductsForm_Load(object sender, EventArgs e)
@@ -73,8 +74,8 @@ namespace demo3_2
                     dataTable.Clear();
                     dataTable = new DataTable();
                     sAdapter.Fill(dataTable);
-                    dataGridView1.DataSource = dataTable;
-                    dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                    dataGridView.DataSource = dataTable;
+                    dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                     connection.Close();
                 }
             }
@@ -93,9 +94,9 @@ namespace demo3_2
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         connection.Open();
-                        string ID = dataGridView1.SelectedRows[0].Cells["ID"].Value.ToString();
-                        string query = $"DELETE FROM Избранные_товары WHERE ID = {ID}";
-                        dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+                        string ID = dataGridView.SelectedRows[0].Cells["ID"].Value.ToString();
+                        string query = $"DELETE FROM {tableName} WHERE ID = {ID}";
+                        dataGridView.Rows.RemoveAt(dataGridView.CurrentRow.Index);
                         SqlCommand command = new SqlCommand(query, connection);
                         command.ExecuteNonQuery();
                         connection.Close();
@@ -116,7 +117,7 @@ namespace demo3_2
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    sAdapter = new SqlDataAdapter("SELECT * FROM Избранные_товары", connection);
+                    sAdapter = new SqlDataAdapter($"SELECT * FROM {tableName}", connection);
                     SqlCommandBuilder builder = new SqlCommandBuilder(sAdapter);
                     sAdapter.Update(dataTable);
                     connection.Close();
@@ -134,9 +135,8 @@ namespace demo3_2
         {
             if (tablesCmbox.SelectedItem != null)
             {
-                string selectedTable = tablesCmbox.SelectedItem.ToString();
-                dataTable.Clear();
-                LoadData(selectedTable);
+                tableName = tablesCmbox.SelectedItem.ToString();
+                LoadData(tableName);
             }
         }
     }
