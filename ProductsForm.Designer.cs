@@ -94,10 +94,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.ComboBox tablesCmbox;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button saveButton;
+        public System.Windows.Forms.DataGridView dataGridView;
+        public System.Windows.Forms.ComboBox tablesCmbox;
     }
 }

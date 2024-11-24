@@ -11,8 +11,8 @@ namespace demo3_2
         SqlDataAdapter sAdapter;
         SqlCommandBuilder sBuilder;
         DataTable dataTable = new DataTable();
-        string connectionString = "Data Source=Neko;Initial Catalog=demo3;Integrated Security=True;Encrypt=False";
-        string tableName = "Категория";
+        public string connectionString = "Data Source=Neko;Initial Catalog=demo3;Integrated Security=True;Encrypt=False";
+        public string tableName = "Категория";
 
         public ProductsForm()
         {
@@ -22,7 +22,7 @@ namespace demo3_2
             LoadData(tableName);
         }
 
-        private void LoadTableNames()
+        public void LoadTableNames()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -45,7 +45,7 @@ namespace demo3_2
             }
         }
 
-        private void LoadData(string tableName)
+        public void LoadData(string tableName)
         {
             try
             {
@@ -66,7 +66,7 @@ namespace demo3_2
             }
         }
 
-        private void deleteButton_Click(object sender, EventArgs e)
+        public void deleteButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace demo3_2
             }
         }
 
-        private void saveButton_Click(object sender, EventArgs e)
+        public void saveButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -111,7 +111,7 @@ namespace demo3_2
             }
         }
 
-        private void tablesCmbox_SelectedIndexChanged(object sender, EventArgs e)
+        public void tablesCmbox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tablesCmbox.SelectedItem != null)
             {
