@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using SqlHelper;
 
 namespace demo3_2
 {
@@ -16,6 +17,7 @@ namespace demo3_2
         public AuthForm()
         {
             InitializeComponent();
+            EFCoreAdditional.ShowAll();
         }
 
         private void AuthButton_Click(object sender, EventArgs e)
@@ -23,6 +25,7 @@ namespace demo3_2
             string connectionString = "Data Source=Neko;Initial Catalog=demo3;Integrated Security=True;Encrypt=False";
             string login = loginAuthTxb.Text;
             string password = passwdAuthTxb.Text;
+            EFCoreAdditional.ShowTable("Auth");
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

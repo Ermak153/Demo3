@@ -88,7 +88,6 @@
             this.Controls.Add(this.dataGridView);
             this.Name = "ProductsForm";
             this.Text = "ProductsForm";
-            this.Load += new System.EventHandler(this.ProductsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 

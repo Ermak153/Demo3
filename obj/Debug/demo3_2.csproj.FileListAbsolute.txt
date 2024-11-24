@@ -9,3 +9,5 @@ C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.csproj.CoreCompileInputs.c
 C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.exe
 C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.pdb
 C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.ProductsForm.resources
+C:\Users\ermak\source\repos\demo3_2\bin\Debug\SqlHelper.dll
+C:\Users\ermak\source\repos\demo3_2\obj\Debug\demo3_2.csproj.Up2Date

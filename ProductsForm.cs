@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace demo3_2
@@ -29,11 +22,6 @@ namespace demo3_2
             LoadData(tableName);
         }
 
-        private void ProductsForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void LoadTableNames()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -41,10 +29,8 @@ namespace demo3_2
                 try
                 {
                     connection.Open();
-                    string query = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME != 'sysdiagrams'";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    SqlDataReader reader = command.ExecuteReader();
-
+                    sCommand = new SqlCommand("SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME != 'sysdiagrams'", connection);
+                    SqlDataReader reader = sCommand.ExecuteReader();
                     tablesCmbox.Items.Clear();
                     while (reader.Read())
                     {
@@ -63,13 +49,10 @@ namespace demo3_2
         {
             try
             {
-                string query = $"SELECT * FROM {tableName}";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    sCommand = new SqlCommand(query, connection);
-                    sAdapter = new SqlDataAdapter(sCommand);
-                    dataTable.Clear();
+                    sAdapter = new SqlDataAdapter($"SELECT * FROM {tableName}", connection);
                     dataTable = new DataTable();
                     sAdapter.Fill(dataTable);
                     dataGridView.DataSource = dataTable;
@@ -93,8 +76,7 @@ namespace demo3_2
                     {
                         connection.Open();
                         string ID = dataGridView.SelectedRows[0].Cells["ID"].Value.ToString();
-                        string query = $"DELETE FROM {tableName} WHERE ID = {ID}";
-                        SqlCommand command = new SqlCommand(query, connection);
+                        SqlCommand command = new SqlCommand($"DELETE FROM {tableName} WHERE ID = {ID}", connection);
                         command.ExecuteNonQuery();
                         dataGridView.Rows.RemoveAt(dataGridView.CurrentRow.Index);
                         connection.Close();

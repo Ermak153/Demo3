@@ -1,0 +1,1 @@
+It's simple helper for SQL
