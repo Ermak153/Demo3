@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ermak\\source\\repos\\demo3_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|c:\\users\\ermak\\source\\repos\\demo3_2\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|c:\\users\\ermak\\source\\repos\\demo3_2\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\RegisterForm.cs",
               "RelativeDocumentMoniker": "RegisterForm.cs",
               "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\RegisterForm.cs",
               "RelativeToolTip": "RegisterForm.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwEcAAAANAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwEcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T16:35:25.347Z",
               "EditorCaption": ""
@@ -63,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AuthForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\AuthForm.cs",
               "RelativeDocumentMoniker": "AuthForm.cs",
@@ -75,26 +75,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ProductsForm.cs",
               "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs",
               "RelativeDocumentMoniker": "ProductsForm.cs",
               "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs",
               "RelativeToolTip": "ProductsForm.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAwwKUAAAAJAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAwwCUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T13:00:39.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AuthForm.cs",
               "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\AuthForm.cs",
               "RelativeDocumentMoniker": "AuthForm.cs",
               "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\AuthForm.cs",
               "RelativeToolTip": "AuthForm.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAnwBkAAAB0AAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAnwAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T12:28:07.53Z",
               "EditorCaption": ""
@@ -108,8 +108,7 @@
               "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "ProductsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T12:53:19.069Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2024-11-22T12:53:19.069Z"
             }
           ]
         }

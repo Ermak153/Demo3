@@ -10,6 +10,7 @@ namespace demo3_2
         SqlCommand sCommand;
         SqlDataAdapter sAdapter;
         SqlCommandBuilder sBuilder;
+        SqlDataReader sReader;
         DataTable dataTable = new DataTable();
         public string connectionString = "Data Source=Neko;Initial Catalog=demo3;Integrated Security=True;Encrypt=False";
         public string tableName = "Категория";
@@ -31,13 +32,13 @@ namespace demo3_2
                 {
                     connection.Open();
                     sCommand = new SqlCommand("SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME != 'sysdiagrams'", connection);
-                    SqlDataReader reader = sCommand.ExecuteReader();
+                    sReader = sCommand.ExecuteReader();
                     tablesCmbox.Items.Clear();
-                    while (reader.Read())
+                    while (sReader.Read())
                     {
-                        tablesCmbox.Items.Add(reader["TABLE_NAME"].ToString());
+                        tablesCmbox.Items.Add(sReader["TABLE_NAME"].ToString());
                     }
-                    reader.Close();
+                    sReader.Close();
                 }
                 catch (Exception ex)
                 {
@@ -77,8 +78,8 @@ namespace demo3_2
                     {
                         connection.Open();
                         string ID = dataGridView.SelectedRows[0].Cells["ID"].Value.ToString();
-                        SqlCommand command = new SqlCommand($"DELETE FROM {tableName} WHERE ID = {ID}", connection);
-                        command.ExecuteNonQuery();
+                        sCommand = new SqlCommand($"DELETE FROM {tableName} WHERE ID = {ID}", connection);
+                        sCommand.ExecuteNonQuery();
                         dataGridView.Rows.RemoveAt(dataGridView.CurrentRow.Index);
                         connection.Close();
                         LoadData(tableName);
@@ -99,7 +100,7 @@ namespace demo3_2
                 {
                     connection.Open();
                     sAdapter = new SqlDataAdapter($"SELECT * FROM {tableName}", connection);
-                    SqlCommandBuilder builder = new SqlCommandBuilder(sAdapter);
+                    sBuilder = new SqlCommandBuilder(sAdapter);
                     sAdapter.Update(dataTable);
                     connection.Close();
                     LoadData(tableName);
