@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using EntityFrameworkCoreAdditional;
 
 namespace demo3_2
 {
@@ -16,6 +17,8 @@ namespace demo3_2
         public AuthForm()
         {
             InitializeComponent();
+            EFCoreAdditional.ShowAllTables();
+            EFCoreAdditional.ShowTable("auth");
         }
 
         private void AuthButton_Click(object sender, EventArgs e)
@@ -49,6 +52,13 @@ namespace demo3_2
                     MessageBox.Show("Ошибка при подключении к базе данных: " + ex.Message);
                 }
             }
+        }
+
+        private void registerLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
+            Hide();
         }
     }
 }

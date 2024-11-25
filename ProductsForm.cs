@@ -13,6 +13,7 @@ namespace demo3_2
         DataTable dataTable = new DataTable();
         public string connectionString = "Data Source=Neko;Initial Catalog=demo3;Integrated Security=True;Encrypt=False";
         public string tableName = "Категория";
+        public bool isSorted = false;
 
         public ProductsForm()
         {
@@ -117,6 +118,50 @@ namespace demo3_2
             {
                 tableName = tablesCmbox.SelectedItem.ToString();
                 LoadData(tableName);
+            }
+        }
+
+        private void sortButton_Click(object sender, EventArgs e)
+        {
+            if (dataTable.Columns.Count == 0 || !dataTable.Columns.Contains("ID"))
+            {
+                MessageBox.Show("Столбец 'ID' не найден.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (isSorted)
+            {
+                string columnName = "ID";
+                dataTable.DefaultView.Sort = $"{columnName} ASC";
+                isSorted = false;
+            }
+
+            else 
+            {
+                string columnname = "ID";
+                dataTable.DefaultView.Sort = $"{columnname} DESC";
+                isSorted = true;
+            }
+        }
+
+        private void searchTextbox_TextChanged(object sender, EventArgs e)
+        {
+            string filterText = searchTextbox.Text.Trim();
+            for (int i = 0; i < dataGridView.RowCount; i++)
+            {
+                dataGridView.Rows[i].Selected = false;
+                for (int j = 0; j < dataGridView.ColumnCount; j++)
+                {
+                    if (dataGridView.Rows[i].Cells[j].Value != null)
+                    {
+                        string cellValue = dataGridView.Rows[i].Cells[j].Value.ToString();
+                        if (cellValue.IndexOf(filterText, StringComparison.OrdinalIgnoreCase) >= 0)
+                        {
+                            dataGridView.Rows[i].Selected = true;
+                            break;
+                        }
+                    }
+                }
             }
         }
     }

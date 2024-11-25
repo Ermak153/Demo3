@@ -7,19 +7,24 @@
       "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:authform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F78A380B-2A12-400C-9EF4-43F301B5FF57}|..\\UnitTestProject1\\UnitTestProject1.csproj|c:\\users\\ermak\\source\\repos\\unittestproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|C:\\Users\\ermak\\source\\repos\\demo3_2\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45474FC8-156F-4BC5-B175-FD81ADE60B48}|demo3_2.csproj|solutionrelative:productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,49 +34,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "RegisterForm.cs",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\RegisterForm.cs",
+              "RelativeToolTip": "RegisterForm.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwEcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:35:25.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\UnitTestProject1\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\UnitTestProject1\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\ermak\\source\\repos\\UnitTestProject1\\UnitTest1.cs",
-              "RelativeToolTip": "..\\UnitTestProject1\\UnitTest1.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAUAAAA",
+              "Title": "RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "RegisterForm.cs",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:54:56.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductsForm.cs",
-              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs",
-              "RelativeDocumentMoniker": "ProductsForm.cs",
-              "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs",
-              "RelativeToolTip": "ProductsForm.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAowAsAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T13:00:39.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs",
-              "RelativeDocumentMoniker": "ProductsForm.cs",
-              "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "ProductsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T12:53:19.069Z",
+              "WhenOpened": "2024-11-24T16:24:41.7Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AuthForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\AuthForm.cs",
               "RelativeDocumentMoniker": "AuthForm.cs",
@@ -83,16 +75,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsForm.cs",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs",
+              "RelativeDocumentMoniker": "ProductsForm.cs",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs",
+              "RelativeToolTip": "ProductsForm.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAwwKUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:00:39.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AuthForm.cs",
               "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\AuthForm.cs",
               "RelativeDocumentMoniker": "AuthForm.cs",
               "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\AuthForm.cs",
               "RelativeToolTip": "AuthForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAnwBkAAAB0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T12:28:07.53Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs",
+              "RelativeDocumentMoniker": "ProductsForm.cs",
+              "ToolTip": "C:\\Users\\ermak\\source\\repos\\demo3_2\\ProductsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "ProductsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T12:53:19.069Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]
         }

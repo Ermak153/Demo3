@@ -34,6 +34,7 @@
             this.loginAuthTxb = new System.Windows.Forms.TextBox();
             this.passwdAuthTxb = new System.Windows.Forms.TextBox();
             this.AuthButton = new System.Windows.Forms.Button();
+            this.registerLink = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // mainAuthLab
@@ -93,11 +94,24 @@
             this.AuthButton.UseVisualStyleBackColor = true;
             this.AuthButton.Click += new System.EventHandler(this.AuthButton_Click);
             // 
+            // registerLink
+            // 
+            this.registerLink.AutoSize = true;
+            this.registerLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.registerLink.Location = new System.Drawing.Point(317, 323);
+            this.registerLink.Name = "registerLink";
+            this.registerLink.Size = new System.Drawing.Size(169, 20);
+            this.registerLink.TabIndex = 7;
+            this.registerLink.TabStop = true;
+            this.registerLink.Text = "Зарегистрироваться";
+            this.registerLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.registerLink_LinkClicked);
+            // 
             // AuthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.registerLink);
             this.Controls.Add(this.AuthButton);
             this.Controls.Add(this.passwdAuthTxb);
             this.Controls.Add(this.loginAuthTxb);
@@ -119,6 +133,7 @@
         private System.Windows.Forms.TextBox loginAuthTxb;
         private System.Windows.Forms.TextBox passwdAuthTxb;
         private System.Windows.Forms.Button AuthButton;
+        private System.Windows.Forms.LinkLabel registerLink;
     }
 }
 

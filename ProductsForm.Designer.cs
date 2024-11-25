@@ -32,6 +32,8 @@
             this.tablesCmbox = new System.Windows.Forms.ComboBox();
             this.deleteButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
+            this.sortButton = new System.Windows.Forms.Button();
+            this.searchTextbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,11 +79,33 @@
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
+            // sortButton
+            // 
+            this.sortButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.sortButton.Location = new System.Drawing.Point(748, 147);
+            this.sortButton.Name = "sortButton";
+            this.sortButton.Size = new System.Drawing.Size(165, 38);
+            this.sortButton.TabIndex = 5;
+            this.sortButton.Text = "Сортировка";
+            this.sortButton.UseVisualStyleBackColor = true;
+            this.sortButton.Click += new System.EventHandler(this.sortButton_Click);
+            // 
+            // searchTextbox
+            // 
+            this.searchTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.searchTextbox.Location = new System.Drawing.Point(749, 191);
+            this.searchTextbox.Name = "searchTextbox";
+            this.searchTextbox.Size = new System.Drawing.Size(164, 29);
+            this.searchTextbox.TabIndex = 6;
+            this.searchTextbox.TextChanged += new System.EventHandler(this.searchTextbox_TextChanged);
+            // 
             // ProductsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 567);
+            this.Controls.Add(this.searchTextbox);
+            this.Controls.Add(this.sortButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.tablesCmbox);
@@ -90,6 +114,7 @@
             this.Text = "ProductsForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -98,5 +123,7 @@
         private System.Windows.Forms.Button saveButton;
         public System.Windows.Forms.DataGridView dataGridView;
         public System.Windows.Forms.ComboBox tablesCmbox;
+        private System.Windows.Forms.Button sortButton;
+        private System.Windows.Forms.TextBox searchTextbox;
     }
 }
